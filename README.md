@@ -23,27 +23,8 @@ my-python-app/
 └── README.md           # Project overview
 ```
 
-## 🛠️ Setup
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-## 📤 Artifact Upload
-Artifacts are stored in `artifacts/` and committed manually:
-```bash
-git add artifacts/
-git commit -m "Add new artifacts"
-git push
-```
-
----
-
 ## 🛡️ `.gitignore`
-
 Create this file in the same directory:
-
 ```gitignore
 # Ignore virtual environment
 .venv/
@@ -60,6 +41,22 @@ artifacts/*.tmp
 .DS_Store
 Thumbs.db
 ```
+
+## 🛠️ Setup
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## 📤 Artifact Upload
+Artifacts are stored in `artifacts/` and committed manually:
+```bash
+git add artifacts/
+git commit -m "Add new artifacts"
+git push
+```
+
 ## 🌿 Branching Strategy
 
 ### 🔀 Branch Types
@@ -83,4 +80,5 @@ Thumbs.db
 ### 📦 Artifact Handling
 - Artifacts generated in `dev` should be reviewed before merging to `main`
 - Use commit messages like `Add artifact: output_2025-11-05.txt` for clarity
+
 

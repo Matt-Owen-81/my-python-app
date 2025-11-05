@@ -38,6 +38,28 @@ git commit -m "Add new artifacts"
 git push
 ```
 
+---
+
+## 🛡️ `.gitignore`
+
+Create this file in the same directory:
+
+```gitignore
+# Ignore virtual environment
+.venv/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore artifacts if needed
+artifacts/*.log
+artifacts/*.tmp
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+```
 ## 🌿 Branching Strategy
 
 ### 🔀 Branch Types
@@ -61,3 +83,4 @@ git push
 ### 📦 Artifact Handling
 - Artifacts generated in `dev` should be reviewed before merging to `main`
 - Use commit messages like `Add artifact: output_2025-11-05.txt` for clarity
+

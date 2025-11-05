@@ -46,7 +46,6 @@ Thumbs.db
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
 ```
 
 ## 📤 Artifact Upload
@@ -80,5 +79,6 @@ git push
 ### 📦 Artifact Handling
 - Artifacts generated in `dev` should be reviewed before merging to `main`
 - Use commit messages like `Add artifact: output_2025-11-05.txt` for clarity
+
 
 
